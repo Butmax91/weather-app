@@ -1,19 +1,16 @@
 <template>
     <div class="cont">
-        <button @click="doe" v-if="!getWeather">do</button>
-        <table v-for="table in getWeather" v-else>
-            <tr v-for="(value, key) in table">
-                <td>{{key}}</td>
-                <td>{{value}}</td>
-            </tr>
-        </table>
-        <br>
-        <img :src="getImg.icon" :alt="getImg.text" v-if="getImg">
+       <!-- <button @click="doe" v-if="!getWeather">do</button>-->
+        <TodayWeather/>
 
     </div>
 </template>
 <script>
+    import TodayWeather from './TodayWeather.vue'
     export default {
+        components : {
+            TodayWeather
+        },
         data(){
             return {
 
@@ -36,7 +33,12 @@
 
 </script>
 <style lang="scss" scoped>
-    .cont{
-        background: grey;
+    table {
+        border:1px solid black;
+        border-collapse: collapse;
+        margin: 10px;
+        td{
+            border:1px solid black;
+        }
     }
 </style>
