@@ -32,4 +32,7 @@
 </script>
 <style scoped lang="scss">
     @import "~bootstrap/scss/bootstrap";
+    nav{
+        border-bottom: 1px solid black;
+    }
 </style>

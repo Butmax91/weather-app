@@ -4,7 +4,7 @@
     </div>
 </template>
 <script>
-    import Weather from './../components/Wether.vue'
+    import Weather from '../components/weather/Weather.vue'
     export default {
         computed: {
             getUser() {

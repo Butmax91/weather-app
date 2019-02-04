@@ -2,18 +2,18 @@
   <div id="app">
     <NavBar/>
     <router-view/>
-    <Wether/>
+    <Weather/>
 
   </div>
 </template>
 <script>
   import NavBar from './components/NavBar.vue';
-  import Wether from './components/Wether.vue';
+  import Weather from './components/weather/Weather.vue';
 
   export default {
     components : {
       NavBar,
-      Wether
+      Weather
 
     },
   }

@@ -2,14 +2,17 @@
     <div class="cont">
        <!-- <button @click="doe" v-if="!getWeather">do</button>-->
         <TodayWeather/>
+        <WeekWether/>
 
     </div>
 </template>
 <script>
     import TodayWeather from './TodayWeather.vue'
+    import WeekWether from './WeekWether.vue'
     export default {
         components : {
-            TodayWeather
+            TodayWeather,
+            WeekWether
         },
         data(){
             return {
