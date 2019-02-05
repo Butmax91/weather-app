@@ -21,5 +21,6 @@
 </script>
 
 <style lang="scss">
-
+  @import "~bootstrap/scss/bootstrap";
+  @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 </style>
