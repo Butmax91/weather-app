@@ -62,8 +62,6 @@ export default{
                 state.resultWeather.forecast.push(forecastData);
 
             });
-            console.log(data)
-
         },
         setCity : (state,data) => {
             state.city = data
@@ -71,9 +69,7 @@ export default{
     },
     actions  :{
          getWeather({commit,state}){
-             console.log(state.city ==false)
             let city = state.city ? state.city : 'kiev';
-             console.log(city)
             fetch(`http://api.apixu.com/v1/forecast.json?key=1825545db3244219915115524193001&q=${city}&days=4`)
                 .then(response => response.json())
                 .then(data => {

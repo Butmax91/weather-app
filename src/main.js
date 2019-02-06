@@ -4,7 +4,6 @@ import router from './router'
 import store from './store'
 import 'bootstrap';
 import  '@fortawesome/fontawesome-free/js/all';
-import firebaseConfig from './config/firebaseConfig'
 
 
 Vue.config.productionTip = false;
