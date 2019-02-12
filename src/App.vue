@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-     <h1 class="text-center p-5 ">Weather app using <a href="https://www.apixu.com" target="_blank">apixu </a>api</h1>
+     <h1 class="text-center p-5 ">Weather SPA using <a href="https://www.apixu.com" target="_blank">apixu </a>api</h1>
     <Weather/>
 
   </div>
