@@ -1,5 +1,5 @@
 <template>
-    <div class="weather col-sm-12 col-md-8 col-lg-6 col-xl-4 m-auto ">
+    <div class="weather col-12 col-sm-10 col-md-6 m-auto ">
         <form class="weather-form d-flex flex-row justify-content-center">
             <input type="text" class="mr-1" placeholder="input your city" v-model="getCity">
             <button @click.prevent="getData">Get weather</button>
@@ -63,7 +63,6 @@
 <style lang="scss" scoped>
 
     .weather{
-        border:1px solid black;
         border-radius: 5px;
         padding: 30px 0;
         background-image: linear-gradient(to right, #50154e,#c94b4b);

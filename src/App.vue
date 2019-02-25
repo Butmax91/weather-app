@@ -20,7 +20,7 @@
 <style lang="scss">
     #app{
         background-image: linear-gradient(to right , #c0d3af , #759198);
-        height: 100vh;
+        padding-bottom: 30px;
     }
     h1{
         font-size: 24px !important;
