@@ -11,8 +11,17 @@
   export default {
     components : {
       Weather
-
     },
+      mounted() {
+        window.addEventListener('resize',checkSize)
+        function checkSize(){
+              let h = window.innerHeight;
+              let appHeight = parseInt(getComputedStyle(document.querySelector('#app')).height)
+              document.querySelector('#app').style.height = h > appHeight  ? parseInt(h) + 'px': parseInt(appHeight)+'px'
+            console.log( document.querySelector('#app').style.height)
+          }
+          //checkSize();
+      }
   }
 
 </script>

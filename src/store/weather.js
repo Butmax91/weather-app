@@ -73,6 +73,7 @@ export default{
             fetch(`http://api.apixu.com/v1/forecast.json?key=1825545db3244219915115524193001&q=${city}&days=4`)
                 .then(response => response.json())
                 .then(data => {
+                    console.log(data)
                     commit('setWeather',data);
                     commit('setResultWeather',data);
                 })

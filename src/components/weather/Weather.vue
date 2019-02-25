@@ -1,5 +1,5 @@
 <template>
-    <div class="weather col-12 col-sm-10 col-md-6 m-auto ">
+    <div class="weather col-12 col-sm-10 col-md-6  m-auto ">
         <form class="weather-form d-flex flex-row justify-content-center">
             <input type="text" class="mr-1" placeholder="input your city" v-model="getCity">
             <button @click.prevent="getData">Get weather</button>
