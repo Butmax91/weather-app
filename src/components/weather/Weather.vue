@@ -64,7 +64,7 @@
 
     .weather{
         border-radius: 5px;
-        padding: 30px 0;
+        padding: 30px ;
         background-image: linear-gradient(to right, #50154e,#c94b4b);
         color:white;
     }
